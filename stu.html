@@ -1,3 +1,4 @@
+
 <html>
 	<head>
 		<title> student</title>
@@ -5,7 +6,7 @@
 					function student(name)
 					{
 							this.name=name;
-					        this.sub=new Array(Math.floor(Math.random() * 100)+1,Math.floor(Math.random() * 100)+1,Math.floor(Math.random() * 100)+1);
+					        	this.sub=new Array(Math.floor(Math.random() * 100),Math.floor(Math.random() * 100),Math.floor(Math.random() * 100));
 					}		
 						var	stu1=new student("abc");
 						var	stu2=new student("bcd");
@@ -19,8 +20,8 @@
 								        var   sum=0;
 									for (var j=0;j<3;j++)
 									{
-												    
-													sum=sum+stud[i].sub[j];
+											sum+=stud[i].sub[j];	    
+													
 									}
 									document.writeln(stud[i].name +" "+ sum+"<br>");
 									
@@ -29,3 +30,4 @@
 							</script>
 						</head>
 			</html>
+
