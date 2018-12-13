@@ -5,30 +5,27 @@
 					function student(name)
 					{
 							this.name=name;
-							sub=new Array((Math.random() * 100),(Math.random() * 100),(Math.random() * 100));
-							stu1=new student("abc");
-							stu2=new student("bcd");
-							stu3=new student("acd");
-							stu4=new student("ade");
-							stu5=new student("bde");
-						  stud=new Array(stu1,stu2,stu3,stu4,stu5);
+							sub=new Array(Math.floor(Math.random() * 100)+1,Math.floor(Math.random() * 100)+1,Math.floor(Math.random() * 100)+1);
+					}		
+						var	stu1=new student("abc");
+						var	stu2=new student("bcd");
+						var	stu3=new student("acd");
+						var	stu4=new student("ade");
+						var	stu5=new student("bde");
+						 var    stud=new Array(stu1,stu2,stu3,stu4,stu5);
+				                 document.writeln("based on total marks"+"<br>"+"<br>");
 							for(var i=0;i<5;i++)
 							{
-									for (var j=0;j<5;j++)
+								       
+									for (var j=0;j<3;j++)
 									{
 													sum=0;
-													sum=sum+student[i.sub[j]];
+													sum=sum+student[i].sub[j];
 									}
-									document.writeln(stu1[i].name + sum);
-									document.writeln(stu2[i].name + sum);
-									document.writeln(stu3[i].name + sum);
-									document.writeln(stu4[i].name + sum);
-									document.writeln(stu5[i].name + sum);
+									document.writeln(stud[i].name +" "+ sum);
+									
 							}
-							avg=sum/3;
-							{
-									document.writeln(stu1[i].sum + name);
-							}
+							
 							</script>
 						</head>
 			</html>
